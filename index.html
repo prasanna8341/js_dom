@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>This is the heading</h1>
+    <p id = para>This is the paragraph</p>
+
+    <ul>
+        <li>prasanna kumar</li>
+        <li>mahesh</li>
+        <li>surya</li>
+    </ul>
+
+    <button id="button" onclick="alert('this is the button')">click me</button>
+   <script>
+    const h1 = document.querySelector("h1")  // h1 in the console.log
+    console.log(h1);
+
+    const p = document.querySelector("p")
+    p.innerHTML = "This is the modified text content"  // upadated the text from the script
+
+    const ul = document.querySelector("ul")
+    const ulNew = document.createElement("li")   //inserted the new list 
+    ulNew.innerHTML = ('Naveen')
+    ul.appendChild(ulNew) 
+   </script>
+</body>
+</html>
